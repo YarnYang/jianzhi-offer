@@ -5,7 +5,8 @@ HZ偶尔会拿些专业问题来忽悠那些非计算机专业的同学。今天
 
 @解题思路
 动态规划的思想，用p[i]来表示到数组array[:i+1]中最大连续子序列的和。
-p[i] = max(p[i-] + array[i], array[i])
+p[i] = max(p[i-1] + array[i], array[i]) 
+
 '''
 class Solution:
 	def FindGreatestSumOfSubArray(self, array):
